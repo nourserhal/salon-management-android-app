@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6F3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- NAV BAR -->
+        <LinearLayout
+            android:id="@+id/topTabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#C8B58B"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/tabLogout"
+                android:text="Logout"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tabMain"
+                android:text="Main Page"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tabLogin"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <!-- TITLE -->
+        <TextView
+            android:text="Manage Customers"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#3E3E3C"
+            android:gravity="center"
+            android:layout_marginBottom="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- WHITE CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="7dp"
+            android:padding="28dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Customer ID -->
+            <EditText
+                android:id="@+id/edtCustId"
+                android:hint="Customer ID (empty for insert)"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Customer Name -->
+            <EditText
+                android:id="@+id/edtCustName"
+                android:hint="Customer Name"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Customer Phone -->
+            <EditText
+                android:id="@+id/edtCustPhone"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Customer Email -->
+            <EditText
+                android:id="@+id/edtCustEmail"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Gender -->
+            <Spinner
+                android:id="@+id/spCustGender"
+                android:background="#EFEFEF"
+                android:padding="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:popupTheme="@style/Theme.AppCompat.Light" />
+
+            <!-- Birthday -->
+            <EditText
+                android:id="@+id/edtCustDob"
+                android:hint="Birthdate (YYYY-MM-DD)"
+                android:focusable="true"
+                android:clickable="true"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/edtCustPassword"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="30dp" />
+
+            <!-- BUTTONS -->
+            <Button
+                android:id="@+id/btnInsertCust"
+                android:text="Insert Customer"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#C8B58B"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/btnUpdateCust"
+                android:text="Update Customer"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#8F8062"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/btnDeleteCust"
+                android:text="Delete Customer"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#D9534F"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"/>
+
+            <!-- VIEW ALL -->
+            <Button
+                android:id="@+id/btnViewAllCust"
+                android:text="View All Customers"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#C8B58B"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- SEARCH -->
+            <Button
+                android:id="@+id/btnSearchCust"
+                android:text="Search Customer"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#8F8062"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- RECYCLER VIEW -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCustomers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

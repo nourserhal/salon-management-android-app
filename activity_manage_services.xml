@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6F3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- NAV BAR -->
+        <LinearLayout
+            android:id="@+id/topTabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#C8B58B"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/tabLogout"
+                android:text="Logout"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tabMain"
+                android:text="Main Page"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tabLogin"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <!-- TITLE -->
+        <TextView
+            android:text="Manage Services"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#3E3E3C"
+            android:gravity="center"
+            android:layout_marginBottom="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- WHITE CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="7dp"
+            android:padding="28dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Service ID -->
+            <EditText
+                android:id="@+id/edtServiceId"
+                android:hint="Service ID (leave empty for insert)"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Service Name -->
+            <EditText
+                android:id="@+id/edtServiceName"
+                android:hint="Service Name"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Price -->
+            <EditText
+                android:id="@+id/edtServicePrice"
+                android:hint="Price USD "
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Duration -->
+            <EditText
+                android:id="@+id/edtServiceDuration"
+                android:hint="Duration (ex: 30min, 1h)"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Employee Spinner -->
+
+            <!-- BUTTONS -->
+            <Button
+                android:id="@+id/btnServiceAdd"
+                android:text="Insert Service"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#C8B58B"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/btnServiceUpdate"
+                android:text="Update Service"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#8F8062"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/btnServiceDelete"
+                android:text="Delete Service"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#D9534F"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnServiceSearch"
+                android:text="Search Service"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#8F8062"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnServiceShowAll"
+                android:text="Show All Services"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#C8B58B"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- RECYCLER VIEW -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6F3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- NAV BAR -->
+        <LinearLayout
+            android:id="@+id/topTabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#C8B58B"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/tabLogout"
+                android:text="Logout"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tabMain"
+                android:text="Main Page"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tabLogin"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <!-- TITLE -->
+        <TextView
+            android:text="Manage Employees"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#3E3E3C"
+            android:gravity="center"
+            android:layout_marginBottom="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- WHITE CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="7dp"
+            android:padding="28dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Employee ID -->
+            <EditText
+                android:id="@+id/edtEmpId"
+                android:hint="Employee ID (leave empty for insert)"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Employee Name -->
+            <EditText
+                android:id="@+id/edtEmpName"
+                android:hint="Employee Name"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Employee Email -->
+            <EditText
+                android:id="@+id/edtEmpEmail"
+                android:hint="Employee Email"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Employee Password -->
+            <EditText
+                android:id="@+id/edtEmpPassword"
+                android:hint="Employee Password"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Specialty Spinner -->
+            <Spinner
+                android:id="@+id/spEmpSpecialty"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#EFEFEF"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Employee Phone -->
+            <EditText
+                android:id="@+id/edtEmpPhone"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:background="#EFEFEF"
+                android:textColor="#3E3E3C"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Gender Spinner -->
+            <Spinner
+                android:id="@+id/spEmpGender"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#EFEFEF"
+                android:padding="10dp"
+                android:layout_marginBottom="30dp" />
+
+            <!-- BUTTONS -->
+            <Button
+                android:id="@+id/btnEmpAdd"
+                android:text="Insert Employee"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#C8B58B"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/btnEmpUpdate"
+                android:text="Update Employee"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#8F8062"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/btnEmpDelete"
+                android:text="Delete Employee"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#D9534F"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/btnEmpSearch"
+                android:text="Search Employee"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#8F8062"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/btnEmpShowAll"
+                android:text="Show All Employees"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#C8B58B"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- RECYCLER VIEW -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerEmployees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+</ScrollView>

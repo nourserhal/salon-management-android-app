@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6F3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!-- TITLE -->
+        <TextView
+            android:text="Main Page"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#3E3E3C"
+            android:gravity="center"
+            android:layout_marginBottom="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- CUSTOMER CARD -->
+        <LinearLayout
+            android:id="@+id/btnCustomerLogin"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="7dp"
+            android:padding="28dp"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:text="Customer Login"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#C8B58B"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- EMPLOYEE CARD -->
+        <LinearLayout
+            android:id="@+id/btnEmployeeLogin"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="7dp"
+            android:padding="28dp"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:text="Employee Login"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#C8B58B"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- ADMIN CARD -->
+        <LinearLayout
+            android:id="@+id/cardAdmin"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="7dp"
+            android:padding="28dp"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:text="Admin"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#C8B58B"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

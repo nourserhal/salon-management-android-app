@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="12dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appointement ID:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:id="@+id/txtService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service"/>
+
+    <TextView
+        android:id="@+id/txtEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee"/>
+
+    <TextView
+        android:id="@+id/txtCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer"/>
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"/>
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"/>
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textStyle="italic"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnMarkCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mark as Completed"
+        android:background="#C8B58B"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp"/>
+
+</LinearLayout>
